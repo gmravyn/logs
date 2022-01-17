@@ -1,7 +1,7 @@
 ---- Minecraft Crash Report ----
-// Shall we play a game?
+// This doesn't make any sense!
 
-Time: 1/17/22 7:15 AM
+Time: 1/17/22 7:58 AM
 Description: Mod loading error has occurred
 
 java.lang.Exception: Mod Loading has failed
@@ -29,67 +29,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: main
 Stacktrace:
-	at net.minecraftforge.fml.loading.RuntimeDistCleaner.processClassWithFlags(RuntimeDistCleaner.java:71) ~[forgeserver.jar:36.2] {}
--- MOD infinitemusic --
-Details:
-	Mod File: infinitemusic-1.3.0.jar
-	Failure message: Infinite Music has class loading errors
-		java.lang.RuntimeException: Attempted to load class net/minecraft/client/gui/widget/Widget for invalid dist DEDICATED_SERVER
-	Mod Version: 1.3.0
-	Mod Issue URL: http://my.issue.tracker/
-	Exception message: java.lang.RuntimeException: Attempted to load class net/minecraft/client/gui/widget/Widget for invalid dist DEDICATED_SERVER
-Stacktrace:
-	at net.minecraftforge.fml.loading.RuntimeDistCleaner.processClassWithFlags(RuntimeDistCleaner.java:71) ~[forgeserver.jar:36.2] {}
-	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:85) ~[modlauncher-8.0.9.jar:?] {re:classloading,re:classloading}
-	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-8.0.9.jar:?] {}
-	at cpw.mods.modlauncher.TransformingClassLoader$DelegatedClassLoader.findClass(TransformingClassLoader.java:265) ~[modlauncher-8.0.9.jar:?] {}
-	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:136) ~[modlauncher-8.0.9.jar:?] {re:classloading}
-	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:98) ~[modlauncher-8.0.9.jar:?] {re:classloading}
-	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_301] {}
-	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_301] {}
-	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_301] {}
-	at net.minecraftforge.fml.javafmlmod.FMLModContainer.<init>(FMLModContainer.java:61) ~[forge:36.2] {re:classloading}
-	at sun.reflect.GeneratedConstructorAccessor34.newInstance(Unknown Source) ~[?:?] {}
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_301] {}
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_301] {}
-	at net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider$FMLModTarget.loadMod(FMLJavaModLanguageProvider.java:76) ~[forge:36.2] {re:classloading}
-	at net.minecraftforge.fml.ModLoader.buildModContainerFromTOML(ModLoader.java:302) ~[forge:?] {re:classloading}
-	at net.minecraftforge.fml.ModLoader.lambda$buildMods$29(ModLoader.java:281) ~[forge:?] {re:classloading}
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) ~[?:1.8.0_301] {}
-	at java.util.HashMap$EntrySpliterator.forEachRemaining(Unknown Source) ~[?:1.8.0_301] {}
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) ~[?:1.8.0_301] {}
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) ~[?:1.8.0_301] {}
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source) ~[?:1.8.0_301] {}
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source) ~[?:1.8.0_301] {}
-	at java.util.stream.ReferencePipeline.collect(Unknown Source) ~[?:1.8.0_301] {}
-	at net.minecraftforge.fml.ModLoader.buildMods(ModLoader.java:283) ~[forge:?] {re:classloading}
-	at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$11(ModLoader.java:183) ~[forge:?] {re:classloading}
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) ~[?:1.8.0_301] {}
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) ~[?:1.8.0_301] {}
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) ~[?:1.8.0_301] {}
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) ~[?:1.8.0_301] {}
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) ~[?:1.8.0_301] {}
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source) ~[?:1.8.0_301] {}
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source) ~[?:1.8.0_301] {}
-	at java.util.stream.ReferencePipeline.collect(Unknown Source) ~[?:1.8.0_301] {}
-	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:185) ~[forge:?] {re:classloading}
-	at net.minecraftforge.fml.server.ServerModLoader.load(ServerModLoader.java:44) ~[forge:?] {re:classloading}
-	at net.minecraft.server.Main.main(Main.java:95) ~[?:?] {re:classloading}
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301] {}
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_301] {}
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_301] {}
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_301] {}
-	at net.minecraftforge.fml.loading.FMLServerLaunchProvider.lambda$launchService$0(FMLServerLaunchProvider.java:51) ~[forgeserver.jar:36.2] {}
-	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.0.9.jar:?] {}
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.0.9.jar:?] {}
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.0.9.jar:?] {}
-	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.9.jar:?] {}
-	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.9.jar:?] {}
-	at net.minecraftforge.server.ServerMain$Runner.runLauncher(ServerMain.java:63) [forgeserver.jar:?] {}
-	at net.minecraftforge.server.ServerMain$Runner.access$100(ServerMain.java:60) [forgeserver.jar:?] {}
-	at net.minecraftforge.server.ServerMain.main(ServerMain.java:57) [forgeserver.jar:?] {}
-
-
+	at java.lang.ClassLoader.findClass(Unknown Source) ~[?:1.8.0_301] {}
 -- MOD coordinatesplusmod --
 Details:
 	Caused by 0: java.lang.ExceptionInInitializerError
@@ -286,7 +226,7 @@ Details:
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 1.8.0_301, Oracle Corporation
 	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 3784724992 bytes (3609 MB) / 5269618688 bytes (5025 MB) up to 5269618688 bytes (5025 MB)
+	Memory: 3935707080 bytes (3753 MB) / 5258084352 bytes (5014 MB) up to 5258084352 bytes (5014 MB)
 	CPUs: 12
 	JVM Flags: 2 total; -Xmx5120M -Xms5120M
 	ModLauncher: 8.0.9+86+master.3cf110c
@@ -368,7 +308,6 @@ Details:
 		GottschCore-mc1.16.5-f36.1.0-v1.4.0.jar           |GottschCore                   |gottschcore                   |1.4.0               |NONE      |Manifest: NOSIGNATURE
 		BetterStrongholds-1.16.4-1.1.jar                  |YUNG's Better Strongholds     |betterstrongholds             |1.16.4-1.1          |NONE      |Manifest: NOSIGNATURE
 		antiquewaystones-1.2.jar                          |Antique Waystones             |antiquewaystones              |1.2                 |NONE      |Manifest: NOSIGNATURE
-		infinitemusic-1.3.0.jar                           |Infinite Music                |infinitemusic                 |1.3.0               |NONE      |Manifest: NOSIGNATURE
 		majruszs-difficulty-1.16.4-0.7.0.jar              |Majrusz's Progressive Difficul|majruszs_difficulty           |0.7.0               |NONE      |Manifest: NOSIGNATURE
 		mcw-furniture-2.0.1-mc1.16.5.jar                  |Macaw's Furniture             |mcwfurnitures                 |2.0.1               |NONE      |Manifest: NOSIGNATURE
 		HarderNaturalHealing-1.36.0.6.jar                 |Harder Natural Healing Mod    |hardernaturalhealing          |1.36.0.6            |NONE      |Manifest: NOSIGNATURE
